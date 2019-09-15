@@ -150,3 +150,8 @@ module.exports = {
 And with that, you will now be able to access `process.env.API_HOST` from inside your nextJS pages!
 
 From there, we added our next.js pages and components and our symfony routes and services.  Enjoy!
+
+# References
+I grabbed info from all kinds of places around the internet.  But have to give special props to Kevin Wu's blog for the inspiration / jumping off point.
+
+https://medium.com/@kevinwu/client-side-file-upload-to-s3-using-axios-c9363ec7b530
