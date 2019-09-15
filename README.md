@@ -39,6 +39,23 @@ configure
 s3api create-bucket demo-bucket-2019
 ```
 
+Also, make sure you add some kind of CORS permissions for the PUT at least.  I cheated and just added this in AWS console for my new bucket.
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<CORSConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+<CORSRule>
+    <AllowedOrigin>*</AllowedOrigin>
+    <AllowedMethod>POST</AllowedMethod>
+    <AllowedMethod>GET</AllowedMethod>
+    <AllowedMethod>PUT</AllowedMethod>
+    <AllowedMethod>DELETE</AllowedMethod>
+    <AllowedMethod>HEAD</AllowedMethod>
+    <AllowedHeader>*</AllowedHeader>
+</CORSRule>
+</CORSConfiguration>
+```
+
 ## Demo Setup
 
 Assumes you have php >= 7.1, npm and composer installed locally.
