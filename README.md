@@ -18,6 +18,9 @@ So this demo serves a couple of purposes:
 
 Great questions, but this was just a quick weekend project. I had to stop eventually.
 
+## Demo in Action
+![Screenshot](screenshot.gif)
+
 # Running this Demo project
 
 ## AWS Setup
